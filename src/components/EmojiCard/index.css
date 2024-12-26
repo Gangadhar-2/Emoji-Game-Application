@@ -1,0 +1,36 @@
+/* Write your code here. */
+.emoji-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.emoji-img {
+  margin-top: 5px;
+  padding: 10px;
+  height: 130px;
+  width: 130px;
+}
+.list-container {
+  background-color: #ffffff33;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; /* Adjusted width */
+  height: 150px; /* Adjusted height */
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .emoji-img {
+    height: 100px;  /* Smaller image size on small screens */
+    width: 100px;   /* Smaller image size on small screens */
+  }
+
+  .list-container {
+    width: 100px;  /* Adjust list container width for small screens */
+    height: 100px; /* Adjust list container height for small screens */
+  }
+}

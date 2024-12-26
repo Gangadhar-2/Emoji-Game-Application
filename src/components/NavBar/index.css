@@ -1,0 +1,65 @@
+/* Write your code here. */
+.navbar {
+  display: flex;
+  flex-direction: row; /* Ensure Navbar items are in a row */
+  justify-content: space-between; /* Distribute items across the navbar */
+  align-items: center; /* Vertically center items */
+  background-color: #ffffff33;
+  width: 100%;
+  padding: 10px 20px;
+}
+.emoji-logo {
+  height: 35px;
+  width: 100px;
+  margin-left: 80px;
+  margin-top: 13px;
+}
+.score-container {
+  display: flex; /* Use flexbox layout */
+  flex-direction: row; /* Align items in a row */
+  align-items: center; /* Vertically center the items */
+  gap: 20px; /* Adds space between Score and Top Score */
+  margin-left: auto; /* Pushes the score container to the right */
+  margin-right: 20px;
+}
+.game-heading {
+  color: white;
+  font-family: Roboto;
+  margin-left: 10px;
+  font-size: 24px;
+}
+.para {
+  font-family: Roboto, sans-serif;
+  font-size: large;
+  color: white;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px; /* Reduce padding on small devices */
+    flex-direction: row; /* Stack navbar items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .emoji-logo {
+    margin-left: 20px; /* Reduce margin on small screens */
+    margin-top: 10px;  /* Adjust top margin */
+  }
+
+  .score-container {
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+    gap: 10px; /* Adjust space between Score and Top Score */
+    flex-direction: row; /* Keep score items in a row */
+    justify-content: flex-start; /* Align score items to the left */
+  }
+
+  .game-heading {
+    font-size: 20px; /* Adjust heading font size for small screens */
+  }
+
+  .para {
+    font-size: medium; /* Adjust paragraph font size for small screens */
+  }
+}

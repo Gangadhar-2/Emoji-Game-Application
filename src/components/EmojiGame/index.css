@@ -1,0 +1,29 @@
+/* Write your code here. */
+.bg {
+  background: linear-gradient(to bottom, #9796f0, #fbc7d4);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.emojis-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures emojis wrap to the next line */
+  justify-content: center; /* Centers the emojis horizontally */
+  align-items: center; /* Centers the emojis vertically within their line */
+  gap: 20px; /* Space between the emoji items */
+  max-width: 800px; /* Adjust container width as needed */
+  padding: 20px;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 40px;
+}
+
+@media (max-width: 768px) {
+  .emojis-container {
+    max-height: 400px; /* Reduce the height on small screens to fit */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
